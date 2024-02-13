@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="./fslightbox.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav__row">
+                <ul class="left-nav-list">
+                    <li><a class="menu__link" href="#header">Home</a></li>
+                    <li><a class="menu__link" href="#about">About</a></li>
+                    <li><a class="menu__link" href="#master">Team</a></li>
+                    <li><a class="menu__link" href="#book">Booking</a></li>
+                </ul>
+                <div class="logo"><img src="./img/logo.svg" alt="logo" class="logo"></div>
+                <ul class="right-nav-list">
+                    <li><a class="menu__link" href="#menu">Menu</a></li>
+                    <li><a class="menu__link" href="#photos">Galerie</a></li>
+                    <li><a class="menu__link" href="#events">Events</a></li>
+                    <li><a class="menu__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__content">
+                <div class="header-time">
+                    <p>Mon - Fri: 8PM - 10PM</p>
+                    <p>Sat - Sun: 8PM - 3AM</p>
+                </div>
+                <div class="header-title">
+                    <p class="p-title">RESTAURANT</p>
+                    <h1 class="header-h1">HUNGRY PEOPLE</h1>
+                    <hr>
+                    <div class="header-buttons">
+                        <button class="header-btn">BOOK TABLE</button>
+                        <button class="header-btn">EXPLORE</button>
+                    </div>
+                </div>
+                <div class="header-socials">
+                    <a class="header-social" href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+                    <a class="header-social" href="#"><img src="./img/twitter.svg" alt="twitter"></a>
+                    <a class="header-social" href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text-content">
+                    <h2 class="about-title">about us</h2>
+                    <hr>
+                    <h3 class="about-text-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at <br> velit maximus, molestie est a, tempor magna.</h3>
+                    <p class="about-text-p">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non <br> ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a <br> sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla <br> facilisis semper laoreet.</p>
+                </div>
+                <div class="about-images">
+                <img class="about-image" src="./img/about-img.jpg" alt="">
+                <div class="square"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="master" class="master">
+        <div class="container">
+            <div class="master-content">
+                <div class="master-images">
+                    <img class="master-image" src="./img/chef-img.jpg" alt="">
+                    <div class="master-square"></div>
+                </div>
+                <div class="master-text-content">
+                    <h2 class="master-title">master chef</h2>
+                    <hr>
+                    <h3 class="master-text-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                    <p class="master-text-p">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non <br> ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a <br> sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla <br> facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="book">
+        <div class="container">
+            <div class="book-content">
+                <form action="" class="book-form">
+                    <h1 class="book-title">book a table</h1>
+                    <hr class="book-hr">
+                    <div class="inputs">
+                        <input placeholder="Name" type="text" class="input">
+                        <input placeholder="Email" type="email" class="input">
+                        <input placeholder="Phone" type="tel" class="input">
+                        <div class="inputs">
+                            <div class="dropdown">
+                            <button class="dropdown__button">Persons</button>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__list-item" data-value="travel">1 person</li>
+                                <li class="dropdown__list-item" data-value="lesssons">2 person</li>
+                                <li class="dropdown__list-item" data-value="photo">3 person</li>
+                                <li class="dropdown__list-item" data-value="sport">4 person</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <input placeholder="DD/MM/YYYY" type="date" class="input">
+                        <div class="inputs">
+                            <div class="dropdown">
+                            <button class="dropdown__button">Time</button>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__list-item" data-value="travel">18:00</li>
+                                <li class="dropdown__list-item" data-value="lesssons">19:00</li>
+                                <li class="dropdown__list-item" data-value="photo">20:00</li>
+                                <li class="dropdown__list-item" data-value="sport">21:00</li>
+                                <li class="dropdown__list-item" data-value="travel">22:00</li>
+                            </ul>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button class="book-btn">book now</button>
+                </form>
+                <div class="about-images">
+                <img class="about-image" src="./img/about-img.jpg" alt="">
+                <div class="square"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chocolate">
+        <div class="container">
+            <div class="chocolate-content">
+                <div class="chocolate-images">
+                    <img class="chocolate-image" src="./img/Rectangle.jpg" alt="">
+                    <div class="chocolate-square"></div>
+                </div>
+                <div class="chocolate-text-content">
+                    <h2 class="chocolate-title">chocolate pancakes</h2>
+                    <hr>
+                    <h3 class="chocolate-text-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                    <p class="chocolate-text-p">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non <br> ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a <br> sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla <br> facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="menu-content">
+                <div class="menu-title-content">
+                    <h2 class="menu-title">DELICIOUS MENU</h2>
+                    <hr>
+                    <p class="menu-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br> at velit maximus, molestie est a, tempor magna.</p>
+                </div>
+            <div class="title-menu-select">
+                <button class="menu-p-title" data-tab="#tab_1">pasta</button>
+                <div class="verticle-line" ></div>
+                <button class="menu-p-title" data-tab="#tab_2">wine</button>
+                <div class="verticle-line"></div>
+                <button class="menu-p-title" data-tab="#tab_3">dessert</button>
+            </div>
+            <div class="menu-wrapper" id="tab_1">
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">PIZZA QUATRO STAGIONI</h3>
+                        <p class="wrapper-p">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">55,68 USD</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-wrapper" id="tab_2">
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Bota Box Cabernet Sauvignon</h3>
+                        <p class="wrapper-p">Red Wine, Cabernet Sauvignon</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">19,99 USD</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-wrapper" id="tab_3">
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+                <div class="pizza-name">
+                    <div class="left-wrapper">
+                        <h3 class="wrapper-title">Mascarpone-Himbeerquark</h3>
+                        <p class="wrapper-p">Der Nachtisch darf nicht fehlen!</p>
+                    </div>
+                    <div class="right-wrapper">
+                        <h3 class="wrapper-price">4,99 USD</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <div class="events-content">
+                <div class="events-images">
+                    <div class="right-black-card">weddings</div>
+                    <img class="right-events-image" src="./img/Rectangle45.jpg" alt="">
+                    <div class="right-events-square"></div>
+                </div>
+                <div class="events-images">
+                    <img class="left-events-image" src="./img/Rectangle33.jpg" alt="">
+                    <div class="left-events-square"></div>
+                    <div class="left-black-card">corporates</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="photos">
+        <div class="photo-container">
+            <a data-fslightbox="img" href="./img/mazzo.jpg"><img class="photo-row" src="./img/mazzo.jpg" alt=""></a>
+            <a data-fslightbox="img" href="./img/fair.jpg"><img class="photo-row" src="./img/fair.jpg" alt=""></a>
+            <a data-fslightbox="img" href="./img/tables.jpg"><img class="photo-row" src="./img/tables.jpg" alt=""></a>
+            <a data-fslightbox="img" href="./img/chairs.jpg"><img class="photo-row" src="./img/chairs.jpg" alt=""></a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">contact</h2>
+                <hr>
+                <p class="contact-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br> at velit maximus, molestie est a, tempor magna.</p>
+                <form class="contact-form" action="">
+                    <div class="contact-inputs">
+                        <input class="contact-input" placeholder="Name" type="text">
+                        <input class="contact-input" placeholder="Email" type="email">
+                        <input class="contact-input" placeholder="Phone" type="tel">
+                    </div>
+                    <textarea class="contact-textarea" placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                    <button class="contact-btn">send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+            <iframe class="map-link" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4266.490101704758!2d14.442140904886903!3d40.87485688950442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bafb98245d643%3A0x28b132111f33221e!2sHungry%20people!5e0!3m2!1sru!2skz!4v1705859691586!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="footer">© Copyright &nbsp <span class="footer-word"> Mindblister </span> &nbsp2019</footer>
+
+</body>
+</html>
